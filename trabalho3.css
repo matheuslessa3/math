@@ -13,7 +13,7 @@ html {
 body{
     margin: 0;
     font-family: "Jomolhari", serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 :root {
@@ -21,7 +21,7 @@ body{
     --cor-principal: white;
     --cor-contraste: hsl(0, 0%, 0%);
     font-family: "Jomolhari", serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .jomolhari-regular {
