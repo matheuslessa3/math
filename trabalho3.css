@@ -12,6 +12,8 @@ html {
 
 body{
     margin: 0;
+    font-family: "Jomolhari", serif;
+    font-size: 14px;
 }
 
 :root {
@@ -42,6 +44,7 @@ body{
         "footer";
     gap: 10px;
     font-size: 1rem;
+    padding: 0px;
 
 }
 
@@ -55,10 +58,17 @@ header{
     grid-template-columns: 1fr  1fr 1fr 1fr  1fr;
     grid-template-areas:
        "imagem1     titulo  titulo  titulo  titulo"
-       "tesouro cdb fundo   acoes   cripto" ;
+       "menu    menu    menu    menu    menu" ;
     font-size: 1.3rem;
     color: var(--cor-principal);
     background-color:  var(--cor-destaque);
+}
+
+nav{
+    grid-area: menu;
+    /*display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;*/
+
 }
 
 #imagem2{
@@ -100,14 +110,6 @@ header{
     grid-area: cripto;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    width: 0;
-    height: 0;
-    font-size: 0.8rem;
-    grid-area: cripto;
-}
 /*-------------------------------------------------------------------------------------------------------*/
 footer{
     grid-area: footer;
@@ -217,6 +219,7 @@ main{
     margin: 0px;
 }
 #imgtether{
+    margin-top:20px;
     height: 175px;
     width: 175px;
 }
@@ -224,6 +227,7 @@ main{
     margin: 0px;
 }
 #imgbinancecoin{
+    margin-top:20px;
     height: 175px;
     width: 175px;
 }
@@ -231,6 +235,7 @@ main{
     margin: 0px;
 }
 #imgcardano{
+    margin-top:20px;
     height: 175px;
     width: 175px;
 }
@@ -262,13 +267,8 @@ main{
 }
 
 #conta{
-    margin: 10px;
+     margin: 10px;
 }
-
-#valor{
-    margin: 10px;
-}
-
 #meta{
     margin: 10px;
 }
